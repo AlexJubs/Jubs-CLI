@@ -3,6 +3,9 @@
 if [ $1 == "counters" ]
 then 
 	open -a "google chrome" "https://www.counterstats.net/league-of-legends/$2" # incase I'm playing league of legends ;)
+elif [ $1 == "aws" ]
+then
+	open -a "google chrome "https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2#"
 elif [ $1 == "messenger" ]
 then
 	open -a "google chrome" "https://www.messenger.com/"
@@ -18,6 +21,9 @@ then			# accessing my 2 emails
 elif [ $1 == "uw_email" ]
 then
 	open -a "google chrome" "https://outlook.office.com/mail/inbox"
+elif [ $1 == "twilio" ]
+then
+	open -a "google chrome" "https://www.twilio.com/console"
 else
 	echo "invalid command"
 fi
