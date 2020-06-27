@@ -9,6 +9,9 @@ then
 elif [ $1 == "messenger" ]
 then
 	open -a "google chrome" "https://www.messenger.com/"
+elif [ $1 == "github" ]
+then
+	open -a "google chrome" "https://github.com/AlexJubs"
 elif [ $1 == "builds" ]
 then
 	open -a "google chrome" "https://champion.gg/champion/$2"
