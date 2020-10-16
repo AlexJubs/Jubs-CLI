@@ -1,6 +1,11 @@
 #! /bin/bash
 # a cli tool used to open common links that I use - just using bash instead of making 2 clicks to chrome
-if [ $1 == "counters" ]
+if [ $1 == "push" ]
+then
+	git add .
+	git commit -m "$2"
+	git push
+elif [ $1 == "counters" ]
 then 
 	open -a "google chrome" "https://www.counterstats.net/league-of-legends/$2" # incase I'm playing league of legends ;)
 elif [ $1 == "aws" ]
